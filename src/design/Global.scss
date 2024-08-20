@@ -11,8 +11,14 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    top: 120px;
 }
 
+body {
+    height: 200vh;
+    background-color: #2E8A99;
+}
 
 $primaryColor : #1F6E8C;
 $secondaryColor: #2E8A99;
