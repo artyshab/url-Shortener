@@ -44,56 +44,38 @@
     }
 
     .buttons {
-      .btn {
-        margin: 0 10px;
-        padding: 10px 20px;
-        background-color: $accentColor;
-        font-size: 1.1rem;
-        border: none;
-        border-radius: 25px;
-        color: $white;
-        cursor: pointer;
-        transition: 0.4s all ease;
-        font-weight: 600;
-      }
-      .btn:hover {
-        transform: scale(1.1);
-        transition: 0.4s all ease;
-      }
-
       .btn1 {
         @extend .btn;
         background: transparent;
       }
     }
     .menu-btn {
-        display: none;
-        img {
-            width: 50px;
-        }
-        .dropdown-menu {
-            position: absolute;
-            top: 100px;
-            left: 0;
-            width: 100%; 
-            padding: 20px;
-            background: $darkBlue;
-            transition: 0.8s all ease;
-            ul {
-                text-align: center;
-                li {
-                    list-style: none;
-                    display: inline;
-                    margin: 5px;
-                    a {
-                        text-decoration: none;
-                        color:  white;
-                        font-size: 1.1rem;
-
-                    }
-                }
+      display: none;
+      img {
+        width: 50px;
+      }
+      .dropdown-menu {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: $darkBlue;
+        transition: 0.8s all ease;
+        ul {
+          text-align: center;
+          li {
+            list-style: none;
+            display: inline;
+            margin: 5px;
+            a {
+              text-decoration: none;
+              color: white;
+              font-size: 1.1rem;
             }
+          }
         }
+      }
     }
   }
 }
@@ -107,11 +89,11 @@
       ul {
         li {
           a {
-            color: $darkBlue; 
+            color: $darkBlue;
           }
           a:hover {
             opacity: 1;
-            color: $accentColor; 
+            color: $accentColor;
           }
         }
       }
@@ -119,17 +101,16 @@
 
     .buttons {
       .btn {
-        background-color: $darkBlue; 
-        color: $white; 
+        background-color: $darkBlue;
+        color: $white;
       }
       .btn1 {
         background: transparent;
-        color: $darkBlue; 
+        color: $darkBlue;
       }
     }
   }
 }
-
 
 @media screen and (max-width: 1024px) {
   .navbar-container {
@@ -144,7 +125,7 @@
     .navbar-wrapper {
       .logo {
         img {
-            width: 70px;
+          width: 70px;
         }
         ul {
           display: none;
@@ -158,7 +139,7 @@
       .menu-btn {
         display: block;
         img {
-            width: 50px;
+          width: 50px;
         }
       }
     }
