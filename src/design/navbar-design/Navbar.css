@@ -1,50 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Arimo", sans-serif;
 }
 
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  top: 120px;
 }
 
-.navbar-wrapper {
-  background-color: #383247;
+body {
+  height: 200vh;
+  background-color: #0e2954;
+}
+
+.btn, .navbar-container .navbar-wrapper .buttons .btn1 {
+  padding: 10px 20px;
+  background-color: #84a7a1;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.4s all ease;
+  font-weight: 600;
+}
+
+.btn:hover, .navbar-container .navbar-wrapper .buttons .btn1:hover {
+  transform: scale(1.1);
+  transition: 0.4s all ease;
+}
+
+.navbar-container {
+  background: transparent;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  transition: 0.9s all ease;
+}
+.navbar-container .navbar-wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
 }
-.navbar-wrapper .logo {
-  width: 35%;
+.navbar-container .navbar-wrapper .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.navbar-wrapper .logo img {
-  width: 100px;
+.navbar-container .navbar-wrapper .logo img {
+  width: 80px;
+  margin-right: 20px;
 }
-.navbar-wrapper .links {
-  width: 35%;
-}
-.navbar-wrapper .links ul {
+.navbar-container .navbar-wrapper .logo ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.navbar-wrapper .links ul li {
+.navbar-container .navbar-wrapper .logo ul li {
   list-style: none;
+  font-size: 1.1rem;
+  margin-right: 10px;
 }
-.navbar-wrapper .links ul li a {
+.navbar-container .navbar-wrapper .logo ul li a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
+  opacity: 0.9;
 }
-.navbar-wrapper .buttons {
-  width: 35%;
+.navbar-container .navbar-wrapper .logo ul li a:hover {
+  opacity: 1;
 }
-.navbar-wrapper .buttons .btn {
-  padding: 5px 10px;
-  background-color: #F97300;
-  font-size: 1.3rem;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
+.navbar-container .navbar-wrapper .buttons .btn1 {
+  background: transparent;
+}
+.navbar-container .navbar-wrapper .menu-btn {
+  display: none;
+}
+.navbar-container .navbar-wrapper .menu-btn img {
+  width: 50px;
+}
+.navbar-container .navbar-wrapper .menu-btn .dropdown-menu {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: #0e2954;
+  transition: 0.8s all ease;
+}
+.navbar-container .navbar-wrapper .menu-btn .dropdown-menu ul {
+  text-align: center;
+}
+.navbar-container .navbar-wrapper .menu-btn .dropdown-menu ul li {
+  list-style: none;
+  display: inline;
+  margin: 5px;
+}
+.navbar-container .navbar-wrapper .menu-btn .dropdown-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.navbar-container.fixed {
+  background: white;
+  transition: 0.9s all ease;
+}
+.navbar-container.fixed .navbar-wrapper .logo ul li a {
+  color: #0e2954;
+}
+.navbar-container.fixed .navbar-wrapper .logo ul li a:hover {
+  opacity: 1;
+  color: #84a7a1;
+}
+.navbar-container.fixed .navbar-wrapper .buttons .btn, .navbar-container.fixed .navbar-wrapper .buttons .btn1 {
+  background-color: #0e2954;
+  color: #ffffff;
+}
+.navbar-container.fixed .navbar-wrapper .buttons .btn1 {
+  background: transparent;
+  color: #0e2954;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-container .navbar-wrapper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar-container .navbar-wrapper .logo img {
+    width: 70px;
+  }
+  .navbar-container .navbar-wrapper .logo ul {
+    display: none;
+  }
+  .navbar-container .navbar-wrapper .buttons .btn, .navbar-container .navbar-wrapper .buttons .btn1 {
+    display: none;
+  }
+  .navbar-container .navbar-wrapper .menu-btn {
+    display: block;
+  }
+  .navbar-container .navbar-wrapper .menu-btn img {
+    width: 50px;
+  }
 }/*# sourceMappingURL=Navbar.css.map */
