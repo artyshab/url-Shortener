@@ -1,8 +1,8 @@
 import Button from "./Button"
 import image from '../assets/midsection/man-developing-website.svg'
-import '../design/midsection-design/MidSection.scss'
+import '../design/herosection-design/HeroSection.scss'
 
-export default function MidSection() {
+export default function HeroSection() {
     return (
         <>
         <div className="container">
