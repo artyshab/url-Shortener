@@ -2,6 +2,7 @@
 
 .midsection-wrapper {
   width: 90%;
+  height: 500px;
   margin: 50px auto;
   .midsection-text {
     width: 100%;
@@ -82,6 +83,7 @@
 
 @media screen and (max-width: 1100px) {
   .midsection-wrapper {
+    height: 1100px;
     .cards {
       flex-direction: column;
 

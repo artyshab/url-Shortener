@@ -5,6 +5,7 @@ import RoutePaths from './RoutePaths';
 import HeroSection from './components/HeroSection';
 import FormField from './components/FormField';
 import MidSection from './components/MidSection';
+import Prefooter from './components/Prefooter';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HeroSection/>
       <FormField/>
       <MidSection/>
+      <Prefooter/>
       <RoutePaths />
     </Router>
   );
