@@ -4,6 +4,7 @@ import './design/Global.css';
 import RoutePaths from './RoutePaths';
 import HeroSection from './components/HeroSection';
 import FormField from './components/FormField';
+import MidSection from './components/MidSection';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <HeroSection/>
       <FormField/>
+      <MidSection/>
       <RoutePaths />
     </Router>
   );
